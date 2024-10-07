@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+    background-color: hsl(235, 21%, 11%);
+}
+
+.image {
+    background-image: url('bg-desktop-dark.jpg');
+    width: 100%;
+    /* Set a width */
+    height: 200px;
+    /* Set a height */
+    background-size: cover;
+    /* Adjust background size as needed */
+    background-position: center;
+    /* Adjust background position as needed */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container .todo {
+    width: 400px;
+    position: absolute;
+    top: 50px;
+}
+
+.container .todo .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.container .todo .head h2 {
+    font-weight: bold;
+    letter-spacing: 8px;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.container .todo .head img {
+    width: 20px;
+    height: 20px;
+}
+
+.container .todo .inp {
+    margin-top: 30px;
+    display: flex;
+    background-color: hsl(235, 24%, 19%);
+    align-items: center;
+    padding: 0 15px ;
+    height: 50px;
+
+}
+
+.container .todo .inp input {
+    width: 85%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0 15px ;
+    caret-color: hsl(233, 14%, 35%) ;
+    color: white;
+
+
+}
+
+.container .todo .inp .ck ,.todocomplate
+ {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid hsl(233, 14%, 35%);
+    cursor: pointer;
+}
+
+.container .todo .todolist {
+    background-color: hsl(235, 24%, 19%);
+    margin-top: 20px;
+}
+.container .todo .todolist .todocontain{
+    display: flex;align-items: center;
+    padding: 0 12px;
+    height: 50px;
+    border-color: transparent transparent hsl(237, 14%, 26%) transparent;
+    border-width: 1px;
+    border-style: solid;
+}
+.container .todo .todolist .todocontain .todotext{
+    width: 85%;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    padding: 15px;
+    
+}
+.todocomplate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todobot {
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.todobot .numb{
+    color: hsl(233, 14%, 35%) ;
+    font-size: 11px;
+    font-weight: bold;
+    width: fit-content;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.todobot .td , .clear{
+     color: hsl(233, 14%, 35%) ;
+    font-size: 11px;
+    font-weight: bold; 
+    width: fit-content;
+}
+
+.todobot .td  span{
+    display: inline-block;
+    margin: 0 8px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.todobot .td span:first-child{
+    color:  hsl(220, 98%, 61%);
+}
+.todobot{
+    background-color: hsl(235, 24%, 19%);}
+    .clear{
+        cursor: pointer;
+    }
+   
