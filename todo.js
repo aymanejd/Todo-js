@@ -4,7 +4,7 @@ console.log(creattodo);
 document.addEventListener("DOMContentLoaded", function () {
     window.localStorage.removeItem("checkedItems")
     loadItemsFromLocalStorage();
-    number()
+    updateItemCount()
 });
 
 creattodo.addEventListener("click", function () {
@@ -44,18 +44,16 @@ function createNewItem(text) {
         });
     });
     document.querySelector("#tod").value="";
-    number();
+    updateItemCount();
     saveItemsToLocalStorage();
 }
-function number() {
-    let textto = document.querySelectorAll(".todocontain");
-    let count = textto.length;
 
+function updateItemCount() {
+    let totalItems = document.querySelectorAll(".todocontain").length;
     let nm = document.querySelector(".num");
-    nm.textContent = count;
-    return count;
+    nm.textContent = totalItems; 
 }
-function n9s() {
+function subtract() {
     let nme = document.querySelector(".num");
     nme.textContent -= 1
 }
