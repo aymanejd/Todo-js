@@ -7,13 +7,9 @@ body {
 .image {
     background-image: url('bg-desktop-dark.jpg');
     width: 100%;
-    /* Set a width */
     height: 200px;
-    /* Set a height */
     background-size: cover;
-    /* Adjust background size as needed */
     background-position: center;
-    /* Adjust background position as needed */
 }
 
 * {
